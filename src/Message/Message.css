@@ -1,0 +1,48 @@
+.chatbox-box-message p{
+    max-width: 50%;
+    margin: 0;
+  }
+  .chatbox-box-message span{
+    color: #5a5a5a;
+    font-size: 20px;
+    max-width: 50%;
+    margin: 0;
+  }
+  .chatbox-box-message.your p{
+    float: right;
+  }
+  .chatbox-box-message.your span{
+    float: right;
+    clear: both;
+    margin: 0px 20px 0px 0px;
+  }
+  .chatbox-box-message.others p{
+    float: left;
+    clear: both;
+    margin: 0px 0px 0px 20px;
+  }
+  .chatbox-box-message.others span{
+    float: left;
+  }
+  
+  .chatbox-box-message-body{
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    overflow-wrap: break-word;
+    clear: both;
+    text-align: left;
+  }
+  .chatbox-box-message-body.your{
+    float: right;
+    background-color: rgb(25, 90, 90);
+    color: #a0a4ad;
+  }
+  .chatbox-box-message-body.others{
+    float: left;
+    background-color: aqua;
+    color: #282c34;
+  }
