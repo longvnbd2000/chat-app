@@ -5,6 +5,7 @@ import QueryString from "query-string";
 import Messages from "../Messages/Messages";
 
 let socket;
+const moment = require('moment')
 const Chat = ({location}) =>{
     const [username, setUsername] = useState('');
     const [room, setRoom] = useState('');
@@ -41,7 +42,8 @@ const Chat = ({location}) =>{
         e.preventDefault();
 
         if(message){
-            socket.emit('sendMessage', message, () => setMessage(''));
+            let time = moment().format('h:mm a')
+            socket.emit('sendMessage', {message, time}, () => setMessage(''));
         }
     }
     console.log(messages)
