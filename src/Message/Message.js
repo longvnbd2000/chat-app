@@ -1,7 +1,7 @@
 import React from "react";
 import './Message.css';
 
-const Message = ({message: {user, text}, name}) => {
+const Message = ({message: {user, text, time}, name}) => {
     let isYour = false;
 
     if(user === name){
@@ -11,7 +11,7 @@ const Message = ({message: {user, text}, name}) => {
         isYour
         ?(
             <div className="chatbox-box-message your">
-                <span>9:10 a.m</span><p>{user}</p>
+                <span>{time}</span><p>{user}</p>
                 <div className="chatbox-box-message-body your">
                     {text}
                 </div>
@@ -19,7 +19,7 @@ const Message = ({message: {user, text}, name}) => {
         )
         :(
             <div className="chatbox-box-message others">
-                <p>{user}</p><span>9:10 a.m</span>
+                <p>{user}</p><span>{time}</span>
                 <div className="chatbox-box-message-body others">
                     {text} 
                 </div>
