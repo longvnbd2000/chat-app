@@ -55,7 +55,7 @@ const Chat = ({location}) =>{
                 <h4>users online</h4>
                 <ul>
                 <li>shun lung</li>
-                <li>ducky</li>
+                <li>NoraBobo</li>
                 </ul>
             </div>
             <div className="chatbox-box">
@@ -71,8 +71,6 @@ const Chat = ({location}) =>{
                 <button type="submit">send</button>
             </div>
             </div>
-        
-            
         </header>
         </div>
     )
